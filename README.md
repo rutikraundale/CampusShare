@@ -1,4 +1,4 @@
-# 🚀 Hackmeet
+#  Hackmeet
 
 Hackmeet is a collaborative platform designed to help students discover hackathons, create or join teams, connect with other participants, and collaborate through real-time communication.
 
@@ -15,7 +15,7 @@ The platform provides a centralized ecosystem for:
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### 👤 User Management
 
@@ -61,7 +61,7 @@ The platform provides a centralized ecosystem for:
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 Hackmeet follows a layered client-server architecture. The React frontend communicates with the Node.js and Express.js backend through REST APIs and WebSockets. The backend processes requests through API routes, middleware, and controller modules before interacting with MongoDB or external services.
 
