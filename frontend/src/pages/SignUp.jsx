@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Plus, X } from "lucide-react";
+import { Plus, X, ArrowLeft } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useToast } from "../context/ToastContext";
@@ -97,13 +97,21 @@ const SignUp = () => {
       {/* ToastContainer must be mounted here — SignUp is a public route outside DashboardLayout */}
       <ToastContainer />
       {/* Header */}
-      <div className="border-b border-slate-700 flex justify-between items-center">
-        <div className="flex items-center gap-2 mx-4">
+      <div className="border-b border-slate-700 flex justify-between items-center px-4 sm:px-8">
+        <div className="flex items-center gap-2">
           <div className="border border-white px-2 py-1 text-sm font-bold">▶</div>
-          <span className="font-bold text-lg tracking-wider px-6 py-3">
+          <span className="font-bold text-lg tracking-wider py-3">
             HACKMEET
           </span>
         </div>
+        <button
+          type="button"
+          onClick={() => navigate(-1)}
+          className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700 px-4 py-2 rounded-lg transition min-h-[40px] cursor-pointer"
+        >
+          <ArrowLeft size={16} />
+          <span>Back</span>
+        </button>
       </div>
 
       {/* Main */}
@@ -111,6 +119,15 @@ const SignUp = () => {
       <div className="flex-1 flex flex-col items-center px-4 py-6 pb-28 sm:pb-6 overflow-y-auto">
         
         <div className="w-full max-w-xl mx-auto bg-gray-900 p-6 sm:p-8 rounded-xl border border-gray-800">
+
+          <button
+            type="button"
+            onClick={() => navigate(-1)}
+            className="inline-flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-white transition-colors mb-4 group cursor-pointer"
+          >
+            <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
+            <span>Back to previous page</span>
+          </button>
 
           {/* Title */}
           <h1 className="text-2xl sm:text-3xl font-bold mb-3">

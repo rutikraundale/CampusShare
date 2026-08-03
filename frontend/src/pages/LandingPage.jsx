@@ -47,8 +47,8 @@ export default function LandingPage() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">Features</a>
-            <a href="#community" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">Community</a>
-            <a href="#about" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">About</a>
+            <Link to="/login" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">Community</Link>
+            <Link to="/about" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">About Us</Link>
           </div>
 
           <div className="hidden md:flex items-center gap-4">
@@ -76,7 +76,8 @@ export default function LandingPage() {
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-20 left-0 w-full bg-slate-900 border-b border-slate-800 py-6 px-4 flex flex-col gap-4 shadow-2xl animate-in slide-in-from-top-4">
             <a href="#features" className="text-base font-medium text-slate-300 p-2 hover:bg-slate-800 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>Features</a>
-            <a href="#community" className="text-base font-medium text-slate-300 p-2 hover:bg-slate-800 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>Community</a>
+            <Link to="/login" className="text-base font-medium text-slate-300 p-2 hover:bg-slate-800 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>Community</Link>
+            <Link to="/about" className="text-base font-medium text-slate-300 p-2 hover:bg-slate-800 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
             <Link to="/login" className="text-base font-medium text-slate-300 p-2 hover:bg-slate-800 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>Sign In</Link>
             <Link to="/signup" className="mt-2 text-center text-base font-semibold bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg shadow-blue-600/20" onClick={() => setIsMobileMenuOpen(false)}>
               Get Started Free
@@ -239,7 +240,7 @@ export default function LandingPage() {
             <div>
               <h4 className="text-white font-semibold mb-6">Company</h4>
               <ul className="space-y-4 text-sm text-slate-400">
-                <li><a href="#" className="hover:text-blue-400 transition-colors">About Us</a></li>
+                <li><Link to="/about" className="hover:text-blue-400 transition-colors">About Us</Link></li>
                 <li><a href="#" className="hover:text-blue-400 transition-colors">Careers</a></li>
                 <li><a href="#" className="hover:text-blue-400 transition-colors">Contact</a></li>
                 <li><a href="#" className="hover:text-blue-400 transition-colors">Partners</a></li>

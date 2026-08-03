@@ -5,6 +5,7 @@ import ProtectedRoute from "../components/ProtectedRoute";
 import { useAuth } from "../context/AuthContext";
 
 const LandingPage = lazy(() => import("../pages/LandingPage"));
+const AboutUs = lazy(() => import("../pages/AboutUs"));
 const SignIn = lazy(() => import("../pages/SignIn"));
 const SignUp = lazy(() => import("../pages/SignUp"));
 const Dashboard = lazy(() => import("../pages/Dashboard"));
@@ -46,6 +47,7 @@ const AppRoutes = () => {
       <Routes>
         {/* Public routes — redirect to dashboard if already logged in */}
         <Route path="/" element={<PublicRoute><LandingPage /></PublicRoute>} />
+        <Route path="/about" element={<PublicRoute><AboutUs /></PublicRoute>} />
         <Route path="/login" element={<PublicRoute><SignIn /></PublicRoute>} />
         <Route path="/signup" element={<PublicRoute><SignUp /></PublicRoute>} />
 
