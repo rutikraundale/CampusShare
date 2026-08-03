@@ -2,19 +2,20 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/rutikraundale/CampusShare#readme",
+  "homepage": "https://github.com/rutikraundale/HackMeet#readme",
   "bugs": {
-    "url": "https://github.com/rutikraundale/CampusShare/issues"
+    "url": "https://github.com/rutikraundale/HackMeet/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rutikraundale/CampusShare.git"
+    "url": "git+https://github.com/rutikraundale/HackMeet.git"
   },
   "license": "ISC",
   "author": "rutik raundale",
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
