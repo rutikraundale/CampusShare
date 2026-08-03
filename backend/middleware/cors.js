@@ -3,8 +3,6 @@ import cors from "cors";
 const allowedOrigins = [
     process.env.CLIENT_URL,
     "https://hackmeetdotcom.netlify.app", // Removed trailing slash
-    "https://hack-meet-ten.vercel.app",    // Removed trailing slash
-    "https://hack-meet-rutikraundale5-2433s-projects.vercel.app", // Removed trailing slash
     "http://localhost:5173",
     "http://localhost:5174",
     "http://localhost:3000",
