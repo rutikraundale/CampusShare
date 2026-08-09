@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@clerk/clerk-react": "^5.61.4",
     "@heroicons/react": "^2.2.0",
     "@mui/icons-material": "^9.0.0",
     "@tailwindcss/vite": "^4.2.2",

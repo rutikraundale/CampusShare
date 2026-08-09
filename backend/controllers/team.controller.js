@@ -125,10 +125,6 @@ export const getRecommendedUsers = async (req, res) => {
 // @access  Private
 export const inviteUser = async (req, res) => {
     try {
-        console.log("Invite Request Body:", req.body);
-        console.log("Invite Request Headers:", req.headers);
-        console.log("Invite Request User:", req.user?._id, "isTeamLeader:", req.user?.isTeamLeader);
-        
         const { targetUserId } = req.body;
         const leaderUser = req.user;
 
@@ -162,7 +158,7 @@ export const inviteUser = async (req, res) => {
         const maxLimit = team.hackathonId?.teamsize || 4; // Default to 4 if not set
         const currentSize = team.members.length + (team.pendingInvites?.length || 0);
 
-        console.log(`Team Size Check: Members: ${team.members.length}, Pending: ${team.pendingInvites?.length || 0}, Total: ${currentSize}, Max: ${maxLimit}`);
+        
 
         if (currentSize >= maxLimit) {
             return res.status(400).json({ success: false, message: `Cannot invite more members. Team size limit (${maxLimit}) reached (including pending invites). Please cancel some pending invites to free up spots.` });
