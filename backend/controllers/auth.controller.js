@@ -180,6 +180,7 @@ export const login = async (req, res) => {
 export const logout = async (req, res) => {
   try {
     // Clear both cookies by setting maxAge to 0
+    const isProd = process.env.NODE_ENV === "production";
     const cookieOptions = {
       httpOnly: true,
       secure: isProd,
