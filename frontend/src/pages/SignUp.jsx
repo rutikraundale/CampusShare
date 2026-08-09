@@ -115,7 +115,7 @@ const SignUp = () => {
 
           <button
             type="button"
-            onClick={() => navigate(-1)}
+            onClick={() => navigate("/",{replace:true})}
             className="inline-flex items-center gap-2 text-xs font-semibold text-slate-400 hover:text-white transition-colors mb-4 group cursor-pointer"
           >
             <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
