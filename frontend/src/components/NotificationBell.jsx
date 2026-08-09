@@ -41,13 +41,13 @@ const NotificationBell = () => {
 
 			{isOpen && (
 				<>
-					{/* Backdrop for mobile */}
+					
 					<div 
 						className="fixed inset-0 bg-black/40 backdrop-blur-[2px] z-[90] md:hidden"
 						onClick={() => setIsOpen(false)}
 					/>
 					
-					/* notification-dropdown enables mobile width fix via index.css */
+					
 					<div className="notification-dropdown absolute right-0 mt-2 w-80 bg-slate-800 border border-slate-700 rounded-xl shadow-2xl z-[100] overflow-hidden animate-in fade-in zoom-in duration-200">
 						<div className="p-4 border-b border-slate-700 flex justify-between items-center bg-slate-900/50">
 							<h3 className="font-semibold text-white">Notifications</h3>

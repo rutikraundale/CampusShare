@@ -8,11 +8,8 @@ import NotificationBell from "./NotificationBell";
 const Navbar = ({ onMenuOpen }) => {
   const navigate = useNavigate();
   const { user, logout } = useAuth();
-  const [search, setSearch] = useState("");
-
-  const handleSearch = (e) => {
-    setSearch(e.target.value);
-  };
+  
+  
 
   const handleProfileClick = () => {
     navigate("/profile");
@@ -43,7 +40,7 @@ const Navbar = ({ onMenuOpen }) => {
     className="flex items-center gap-2 text-white cursor-pointer" 
     onClick={() => navigate("/")}
   >
-    {/* Replace the border box with this img tag */}
+    
     <img 
       src="/hackmeetlogo.png" 
       alt="HackMeet Logo" 
@@ -51,17 +48,6 @@ const Navbar = ({ onMenuOpen }) => {
     />
   </div>
 
-        {/* Search — hidden on mobile, visible sm+ */}
-        <div className="hidden sm:flex items-center bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 w-48 md:w-64 focus-within:border-blue-500 transition">
-          <Search className="w-4 h-4 text-gray-400 mr-2 shrink-0" />
-          <input
-            type="text"
-            value={search}
-            onChange={handleSearch}
-            placeholder="Search..."
-            className="bg-transparent outline-none text-sm text-white w-full placeholder-gray-500"
-          />
-        </div>
       </div>
 
       {/* Right Section */}

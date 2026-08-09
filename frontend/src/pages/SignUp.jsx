@@ -104,14 +104,7 @@ const SignUp = () => {
             HACKMEET
           </span>
         </div>
-        <button
-          type="button"
-          onClick={() => navigate(-1)}
-          className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700 px-4 py-2 rounded-lg transition min-h-[40px] cursor-pointer"
-        >
-          <ArrowLeft size={16} />
-          <span>Back</span>
-        </button>
+        
       </div>
 
       {/* Main */}

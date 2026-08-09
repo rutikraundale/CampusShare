@@ -41,18 +41,19 @@ const SignIn = () => {
       <div className="border-b border-slate-700 flex items-center justify-between px-4 sm:px-8">
         <div className="flex items-center gap-2">
           <div className="border border-white px-2 py-1 text-sm font-bold">▶</div>
-          <span className="font-bold text-lg tracking-wider py-3">
+          <span 
+           className="font-bold text-lg tracking-wider py-3">
             HACKMEET
           </span>
         </div>
-        <button
+        {/* <button
           type="button"
           onClick={() => navigate(-1)}
           className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700 px-4 py-2 rounded-lg transition min-h-[40px] cursor-pointer"
         >
           <ArrowLeft size={16} />
           <span>Back</span>
-        </button>
+        </button> */}
       </div>
 
       {/* Main */}
