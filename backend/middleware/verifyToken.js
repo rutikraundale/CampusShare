@@ -19,7 +19,7 @@ const verifyAccessToken = async (req, res, next) => {
         }
 
         if (!token) {
-            return res.status(200).json({
+            return res.status(401).json({
                 success: false,
                 message: "Unauthorized – no access token provided."
             });
